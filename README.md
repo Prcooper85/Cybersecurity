@@ -2,11 +2,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-https://github.com/Prcooper85/Cybersecurity/blob/main/Images/cloud_architecture.png
+(https://github.com/Prcooper85/Cybersecurity/blob/main/Images/cloud_architecture.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Filebeat.
 
-https://github.com/Prcooper85/Cybersecurity/blob/main/Images/install_elk.yml
+(https://github.com/Prcooper85/Cybersecurity/blob/main/Images/install_elk.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -78,7 +78,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-https://github.com/Prcooper85/Cybersecurity/blob/main/Images/docker_ps_output.png
+(https://github.com/Prcooper85/Cybersecurity/blob/main/Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 
@@ -186,7 +186,7 @@ navigate to 'elkvm public ip':5601/app/kibana#/home/tutorial/systemlogs
 
 go to step five and click check data on the right to see if receiving filebeat data
 
-https://github.com/Prcooper85/Cybersecurity/blob/main/Images/filebeat_data.png
+(https://github.com/Prcooper85/Cybersecurity/blob/main/Images/filebeat_data.png)
 
 ---------------------------------------------
 
@@ -250,5 +250,5 @@ navigate to 'elkvm public ip':5601/app/kibana#/home/tutorial/dockerMetrics
 
 go to step five and press check data button on right to see you are receiving metric data.
 
-https://github.com/Prcooper85/Cybersecurity/blob/main/Images/metricbeat_data.png
+(https://github.com/Prcooper85/Cybersecurity/blob/main/Images/metricbeat_data.png)
 
