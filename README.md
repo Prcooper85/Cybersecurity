@@ -2,11 +2,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-Images/cloud_architecture.png
+https://github.com/Prcooper85/Cybersecurity/blob/main/Images/cloud_architecture.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Filebeat.
 
-Images/install_elk.yml
+https://github.com/Prcooper85/Cybersecurity/blob/main/Images/install_elk.yml
 
 This document contains the following details:
 - Description of the Topology
@@ -53,7 +53,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | 218.215.86.230       |
+| Jump Box | Yes                 | <Current Local IP>   |
 | Web1     | No                  | 10.0.0.7             |
 | Web2     | No                  | 10.0.0.7             |
 | ElkVM    | No                  | 10.0.0.7             |
@@ -78,7 +78,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-Images/docker_ps_output.png
+https://github.com/Prcooper85/Cybersecurity/blob/main/Images/docker_ps_output.png
 
 ### Target Machines & Beats
 
@@ -105,8 +105,8 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to 20.38.173.131:5601 to check that the installation worked as expected.
 
 - Which file is the playbook? Where do you copy it? 
-Images\install_filebeat.yml
-Images\install_metricbeat.yml
+install_filebeat.yml
+install_metricbeat.yml
 
 /etc/ansible/roles
 
@@ -186,7 +186,7 @@ navigate to 'elkvm public ip':5601/app/kibana#/home/tutorial/systemlogs
 
 go to step five and click check data on the right to see if receiving filebeat data
 
-/Images/filebeat_data.png
+https://github.com/Prcooper85/Cybersecurity/blob/main/Images/filebeat_data.png
 
 ---------------------------------------------
 
@@ -250,5 +250,5 @@ navigate to 'elkvm public ip':5601/app/kibana#/home/tutorial/dockerMetrics
 
 go to step five and press check data button on right to see you are receiving metric data.
 
-/Images/metricbeat_data.png
+https://github.com/Prcooper85/Cybersecurity/blob/main/Images/metricbeat_data.png
 
