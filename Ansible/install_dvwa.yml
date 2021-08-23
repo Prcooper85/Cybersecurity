@@ -1,0 +1,33 @@
+---
+  - name: ansible playbook
+    hosts: all
+    become: true
+    tasks:
+
+    - name: APT install docker and pip3
+      apt:
+        update_cache: yes
+        name: docker.io
+        state: present
+
+    - name: APT install docker and pip3
+      apt:
+        name: python3-pip
+        state: present
+
+    - name: PIP install docker
+      pip:
+        name: docker
+
+    - name: Pull docker container
+      docker_container:
+        name: dvwa
+        image: cyberxsecurity/dvwa
+        state: started
+        restart_policy: always
+        published_ports: 80:80
+
+    - name: Enable docker service
+      systemd:
+        name: docker
+        enabled: yes
